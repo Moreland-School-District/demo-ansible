@@ -1,0 +1,15 @@
+---
+- name: win_ping module demo
+  hosts: all
+  become: false
+  gather_facts: false
+  tasks:
+    - name: Install googlechrome
+    win_chocolatey:
+      name: googlechrome
+      state: present
+
+    - name: Upgrade installed packages
+      win_chocolatey:
+        name: all
+        state: latest
