@@ -1,5 +1,5 @@
 ---
-- name: win_ping module demo
+- name: win_timezone module
   hosts: all
   become: false
   gather_facts: true
