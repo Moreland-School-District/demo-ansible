@@ -1,0 +1,13 @@
+---
+- name: win_update module demo for team
+  hosts: all
+  become: false
+  gather_facts: true
+  tasks:
+    - name: Ensure user bob is present
+      win_user:
+        name: {{ user }}
+        password: {{ password }}
+        state: present
+        groups:
+        - {{ groups }}
