@@ -2,7 +2,7 @@
 - name: win_ping module demo
   hosts: all
   become: false
-  gather_facts: false
+  gather_facts: true
   tasks:
     - name: Example from an Ansible Playbook
       win_ping:
