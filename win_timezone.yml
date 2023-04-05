@@ -1,0 +1,9 @@
+---
+- name: win_ping module demo
+  hosts: all
+  become: false
+  gather_facts: true
+  tasks:
+    - name: set timezon to '(UTC-08:00) Pacific Time (US & Canada)'
+      win_timezon:
+        timezone: Pacific Standard Time
