@@ -1,5 +1,6 @@
 ---
-- name: win_ping module demo
+- name: win_chocolatey module demo to install prebuilt packages 
+# website to look at other support packages https://community.chocolatey.org/packages
   hosts: all
   become: false
   gather_facts: false

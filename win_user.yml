@@ -1,5 +1,5 @@
 ---
-- name: win_update module demo for team
+- name: win_user module to manage local users
   hosts: all
   become: false
   gather_facts: true
