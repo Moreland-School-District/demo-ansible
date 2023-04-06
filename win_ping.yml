@@ -1,5 +1,5 @@
 ---
-- name: win_ping module demo
+- name: win_ping module demo test a connection 
   hosts: all
   become: false
   gather_facts: true
