@@ -2,7 +2,7 @@
 - name: win_update module demo for team
   hosts: all
   become: false
-  gather_facts: false
+  gather_facts: true
   tasks:
   - name: Install all security, and critical updates
     win_updates:

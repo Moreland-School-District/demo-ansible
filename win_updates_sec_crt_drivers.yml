@@ -2,7 +2,7 @@
 - name: win_update module to update security, crital, and drivers
   hosts: all
   become: false
-  gather_facts: false
+  gather_facts: true
   tasks:
   - name: Install all security, critical, driver updates
     win_updates:
