@@ -12,6 +12,6 @@
         - Upgrades
         - Drivers
       state: installed
-      blacklist:
+      reject_list:
         - Hewlett-Packard - USB - 3/4/2019 12:00:00 AM - 48.2.4483.1963 
       reboot: yes
