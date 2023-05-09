@@ -2,7 +2,7 @@
 - name: win_update module to update security, crital, and drivers
   hosts: all
   become: false
-  gather_facts: true
+  gather_facts: false
   tasks:
   - name: Install all security, critical, driver updates
     win_updates:
@@ -16,3 +16,4 @@
       reject_list:
         - Hewlett-Packard - USB - 3/4/2019 12:00:00 AM - 48.2.4483.1963 
       reboot: yes
+      reboot_timeout: 2400
